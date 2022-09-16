@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+::selection{
+    background-color: red;
+}
+
+
+/* Mobile responsive */
+@media only screen and (max-width: 600px) {
+ nav{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+ }
+ .responsive-mobile{
+     padding-top: 15px;
+     padding-right: 20px;
+     cursor: pointer;
+ }
+ .menu{
+     display: none;
+     background-color: aliceblue;
+     width: 100%;
+     position: absolute;
+ }
+ .menu ul li{
+     text-align: center;
+     display: block;
+     padding-bottom: 15px;
+     list-style: none;
+ }
+ .menu ul li a{
+     text-decoration: none;
+     font-size: 20px;
+     color: black;
+ }
+ .menu ul li a:hover{
+     color: red;
+ }
+ .close{
+     cursor: pointer;
+     font-size: 40px;
+     padding-top: 20px;
+     padding-left: 20px;
+ }
+ .close:hover{
+     color: red;
+ }
+ .navigation-icons{
+     text-align: center;
+ }
+ .navigation-icons img{
+     padding: 20px;
+     cursor: pointer;
+ }
+ /* navigation section end */
+ /* banner section start */
+ .banner{
+     width: 100%;
+     display: flex;
+     flex-direction: column-reverse;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+     padding-bottom: 50px;
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+ .banner-left{
+    flex: 1;
+    display: inline-block;
+    text-align: center;
+ }
+ .banner-right {
+   flex: 1;
+   display: inline-block;
+   text-align: center;
+   padding-top: 35px;
+ }
+ .banner-right img{
+    width: 80%;
+ }
+ .banner-left h1{
+     font-size: 35px;
+     padding-bottom: 15px;
+ }
+ .banner-left h2{
+     font-size: 35px;
+     color: red;
+     padding-bottom: 20px;
+ }
+ .banner-left p{
+     font-size: 22px;
+     text-align: center;
+     padding-bottom: 50px;
+ }
+ a.btn{
+     padding: 10px 15px;
+     background-color: red;
+     border-radius: 7px;
+     color: white;
+     font-size: 18px;
+     text-decoration: none;
+ }
+ /* banner section end */
+ .dsi{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #F6F6F6;
+     padding: 10px;
+ }
+ .dsi-left{
+     flex-basis: 50%;
+     display: inline-block;
+     text-align: center;
+     padding-bottom: 35px;
+ }
+ .dsi-left img{
+     width: 80%;
+ }
+ .dsi-right{
+     flex-basis: 50%;
+ }
+ .dsi-right h1{
+     
+     font-size: 30px;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+ .dsi-right h1 span{
+     color: red;
+ }
+ .dsi-right p{
+     padding-bottom: 20px;
+ }
+ .dsi-right p strong{
+     color: red;
+ }
+ /* dsi section end */
+ /* products and services section start */
+ #prodects{
+     padding-top: 50px;
+ }
+ #prodects h1{
+     text-align: center;
+     font-size: 25px;
+     padding-bottom: 10px;
+     
+ }
+ .products{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 0px 15px;
+     
+ }
+ .products-contant{
+     display: inline-block;
+     text-align: center;
+     padding-bottom: 20px;
+     
+ }
+ .products-contant h2{
+     color: red;
+     padding: 8px 0px;
+ }
+ .products-contant p{
+     padding-bottom: 25px;
+ }
+ .products-contant a{
+     text-decoration: none;
+     padding: 10px 12px;
+     background-color: red;
+     color: white;
+     font-size: 18px;
+     border-radius: 8px;
+     transition: all 0.5s;
+ }
+ .products-contant a:hover{
+      background-color: white;
+      color: black;
+      border: 1px solid red;
+      border-radius: 8px;
+ }
+ /* products and services */
+ footer{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     padding: 0px 15px;
+ }
+ .footer-1 h2{
+     font-size: 20px;
+     padding-bottom: 20px;
+ }
+ .footer-1 p{
+     padding-bottom: 20px;
+     color: #263238;
+ }
+ .footer-2 h1{
+     font-size: 25px;
+     padding-bottom: 20px;
+ }
+ .footer-2 p{
+     color: #263238;
+     line-height: 25px;
+ }
+ .footer-3 {
+     padding-bottom: 35px;
+ }
+ .footer-3 img{
+     width: 30%;
+ }
+ .footer-3 img:nth-of-type(4){
+     width: 20%;
+     padding-top: 10px;
+ }
+ .footer-copyright{
+     background-color: red;
+     padding: 10px;
+     color: white;
+     text-align: center;
+ }
+}
+/* iped and midem device responsive */
+@media only screen and (min-width: 600px) {
+ .responsive-mobile{
+     display: none;
+ }
+ .close{
+     display: none;
+ }
+ nav{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding-top: 10px;
+ }
+ 
+ .menu{
+     flex-basis: 70%;
+ }
+ .menu{
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+ }
+ .menu ul li{
+     display: inline-block;
+     padding-right: 25px;
+     list-style: none;
+ }
+ .menu ul li a{
+     text-decoration: none;
+     font-size: 18px;
+     color: black;
+ }
+ .navigation-icons img{
+     padding-right: 15px;
+     cursor: pointer;
+ }
+ /* navigition  section end */
+ /* banner section start */
+ .banner{
+     width: 100%;
+     height: 90vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+
+ }
+ .banner-left{
+     flex-basis: 50%;
+     padding-left: 10%;
+
+ }
+ .banner-right{
+     flex-basis: 50%;
+ }
+ .banner-left h1{
+     font-size: 45px;
+     padding-bottom: 10px;
+ }
+ .banner-left h2{
+     font-size: 30px;
+     color: red;
+     padding-bottom: 20px;
+ }
+ .banner-left p{
+     width: 510px;
+     font-size: 18px;
+     padding-bottom: 50px;
+ }
+ a.btn{
+    padding: 10px 15px;
+    background-color: red;
+    border-radius: 7px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+/* bannner section end */
+/* DSI section start */
+.dsi{
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #F6F6F6;
+}
+.dsi-left{
+    flex-basis: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.dsi-right{
+    flex-basis: 50%;
+}
+.dsi-right h1{
+    width: 510px;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+.dsi-right h1 span{
+    color: red;
+}
+.dsi-right p{
+    padding-bottom: 30px;
+    width: 510px;
+}
+.dsi-right p strong{
+    color: red;
+}
+#prodects{
+    padding-top: 60px;
+}
+#prodects h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+.products-contant{
+    width: 330px;
+}
+.products-contant h2{
+    padding: 10px 0px;
+    color: red;
+}
+.products-contant p{
+    padding-bottom: 50px;
+}
+.products-contant a{
+    text-decoration: none;
+    padding: 10px 14px;
+    color: white;
+    background-color: red;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+.products-contant a:hover{
+   background-color: white;
+   color: black;
+   border: 1px solid red;
+   border-radius: 8px;
+}
+/* products section end */
+/* footer section start */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 50px;
+}
+.footer-1{
+    flex-basis: 35%;
+}
+.footer-1 h2{
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: #263238;
+}
+.footer-2{
+    flex-basis: 25%;
+
+}
+.footer-2 h1{
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+.footer-2 p{
+    line-height: 25px;
+}
+.footer-3{
+    flex-basis: 40%;
+    padding-top: 40px;
+}
+.footer-copyright{
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+}
